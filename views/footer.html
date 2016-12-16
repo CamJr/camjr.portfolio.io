@@ -1,0 +1,62 @@
+<footer>
+    <div class="navbar-fixed">
+        <nav class="z-depth-0 white col s12">
+                <ul class="colorfooter">
+                  <li>
+                    <a class="blue-text color_animation_blue">blue</a>
+                  </li>
+                  <p class="slash">
+                    /
+                  </p>
+                  <li>
+                    <a class="yellow-text color_animation_yellow">yellow</a>
+                  </li>
+                  <p class="slash">
+                    /
+                  </p>
+                  <li>
+                    <a class="green-text color_animation_green">green</a>
+                  </li>
+                    <p class="slash">
+                      /
+                    </p>
+                    <li>
+                      <a class="red-text color_animation_red">red</a>
+                    </li>
+                </ul>
+    </nav>
+</div>
+</footer>
+
+  <script type="text/javascript">
+
+  $(".color_animation_blue").on("click", function() {
+    $(".row").css("background", "#2969B0");
+    $("body, a").css("color", "white");
+    $(".determinate").css("background", "#FBCD39");
+    $(".progress_titles").css("color", "black");
+  });
+
+  $(".color_animation_yellow").on("click", function() {
+    $(".row").css("background", "#FBCD39");
+    $("body, a").css("color", "black");
+    $(".determinate").css("background", "#2969B0");
+    $(".progress_titles").css("color", "white");
+
+  });
+  $(".color_animation_green").on("click", function() {
+    $(".row").css("background", "#00A885");
+    $("body, a").css("color", "black");
+    $(".determinate").css("background", "#D14841");
+    $(".progress_titles").css("color", "white");
+  });
+
+
+  $(".color_animation_red").on("click", function() {
+      $(".row").css("background", "#D14841");
+      $("body, a").css("color", "white");
+      $(".determinate").css("background", "#00A885");
+      $(".progress_titles").css("color", "black");
+  });
+
+</script>

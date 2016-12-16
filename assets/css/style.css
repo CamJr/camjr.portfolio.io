@@ -1,0 +1,201 @@
+@font-face {
+    font-family: Munro;
+    src: url(fonts/Munro.ttf);
+}
+
+body {
+    color: white;
+    font-family: 'Munro';
+}
+
+.test{
+  margin-left: 10px!important;
+  margin-right: 10px!important;
+
+}
+
+h1 {
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3{
+  font-size: 25px;
+}
+
+p {
+    font-size: 22px;
+}
+
+a{
+  color: white;
+}
+
+li{
+  padding: -10px
+}
+
+.nav_title{
+  font-size: 3em!important;
+}
+
+.row {
+    background-color: #2969B0;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.navbar-fixed1 {
+    position: relative;
+    height: 0px;
+    z-index: 997;
+}
+
+.fp-controlArrow.fp-next {
+    top: 52%!important;
+    border-width: 20px 0 20px 20px!important;
+    border-color: transparent transparent transparent white!important;
+
+}
+
+.fp-controlArrow.fp-prev {
+    top: 52%!important;
+    width: 0;
+    border-width: 20px 20px 20px 0!important;
+    border-color: transparent white transparent transparent!important;
+
+}
+
+
+/*  main*/
+
+.socialogog {
+    padding: 15px;
+}
+.card_social_logo{
+  color: black;
+}
+
+
+.photodeprofil {
+    width: 10vw;
+}
+
+.fa-arrow-up, .fa-arrow-down{
+  animation: blink 2s ease-in infinite;
+}
+@keyframes blink {
+  from, to { opacity: 1 }
+  50% { opacity: 0 }
+}
+
+.progress {
+    height: 5%;
+    font-size: 3em;
+    background-color: white;
+    width: 50%;
+}
+
+.progress .determinate {
+    color: black;
+    background-color: #FBCD39;
+
+}
+
+.progress_titles{
+    padding-left: 50px;
+    margin-top: 9px;
+}
+
+.progress_pourcent{
+  margin-top: -53px;
+  margin-right: -45px;
+}
+
+
+.main_image_project{
+max-width: 33%;
+}
+
+/* footer  */
+
+footer {
+    max-width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 100
+}
+
+.red-text, .yellow-text, .green-text, .blue-text {
+    font-size: 2em;
+}
+
+.colorfooter {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul a:hover {
+    background-color: rgba(0, 0, 0, 0);
+    text-decoration: underline;
+}
+
+.slash {
+    margin-top: 2px;
+    color: black;
+}
+
+
+/* media  */
+
+@media (max-width: 600px) {
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    .red-text, .yellow-text, .green-text, .blue-text {
+        font-size: 2em;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2.2em;
+    }
+
+    p {
+        font-size: 1.3em;
+    }
+
+    .progress_titles{
+        font-size: 0.3em;
+        padding-left: 50px;
+        padding-top: -10px;
+
+    }
+
+
+.progress_pourcent{
+  display: none!important;
+
+  }
+
+
+#fp-nav ul, .fp-slidesNav ul{
+display: none!important;
+}
+
+.card.large {
+  height: 388px!important;
+      margin-right: -50%;
+      margin-left: -50%;
+
+}
+
+}
