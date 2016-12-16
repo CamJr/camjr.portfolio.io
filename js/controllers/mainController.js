@@ -46,7 +46,7 @@ function mainController() {
         logo: 'github',
         href: 'https://github.com/CamJr/Hackathon-Movember'
     }, {
-      name: 'hopital la loupe',
+      name: 'Centre Hospitalier de La loupe',
       img: 'chlaloupe.png',
       bio: 'Création dun site vitrine administrable pour le centre Hospitalier de La Loupe.',
       logo: 'github',
