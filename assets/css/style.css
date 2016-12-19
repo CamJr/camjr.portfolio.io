@@ -79,6 +79,9 @@ li{
   color: black;
 }
 
+.github_project{
+    margin-top: -1%;
+  }
 
 .photodeprofil {
     width: 10vw;
@@ -169,6 +172,10 @@ nav ul a:hover {
         font-size: 2.2em;
     }
 
+.skills{
+  display: none!important;
+}
+
     p {
         font-size: 1.3em;
     }
@@ -195,7 +202,8 @@ display: none!important;
   height: 388px!important;
       margin-right: -50%;
       margin-left: -50%;
-
 }
-
+.photodeprofil {
+    width: 30vw;
+}
 }

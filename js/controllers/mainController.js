@@ -40,27 +40,33 @@ function mainController() {
     }];
 
     this.slide = [{
-        name: 'Movember Application',
-        img: 'moustache.png',
-        bio: 'Création dune application web mobile pour l’événement Movember.',
+        name: 'Hackathon Uro-tech Pierre Fabre',
+        img:  'urotech.png',
+        bio:  'Création dun application à usage de patients souffrant dhyperactivité vésicale.',
+        logo: 'github',
+        href: 'https://github.com/stephsen/Hackathon_urotech'
+    }, {
+        name: 'Hackathon Movember Application',
+        img:  'moustache.png',
+        bio:  'Création dune application web mobile pour l’événement Movember.',
         logo: 'github',
         href: 'https://github.com/CamJr/Hackathon-Movember'
     }, {
-      name: 'Centre Hospitalier de La loupe',
-      img: 'chlaloupe.png',
-      bio: 'Création dun site vitrine administrable pour le centre Hospitalier de La Loupe.',
+      name: 'Projet Centre Hospitalier de La loupe',
+      img:  'chlaloupe.png',
+      bio:  'Création dun site vitrine administrable pour le centre Hospitalier de La Loupe.',
       logo: 'github',
       href: 'https://github.com/WildCodeSchool/laloupe-0916-ch-laloupe'
     }, {
-        name: 'ComparateurAgricole.com',
+        name: 'Hackathon ComparateurAgricole.com',
         img: 'biagri.png',
         bio: 'Réalisation dun site web dachat et de vente de produits agricoles.',
         logo: 'github',
         href: 'https://github.com/Jipsian/Hackathon-Biagri'
     }, {
-        name: 'Agrividéo',
-        img: 'agrivideo.png',
-        bio: 'Création dune plateforme de cours en ligne autour de lagriculture.',
+        name: 'Hackathon Agrividéo',
+        img:  'agrivideo.png',
+        bio:  'Création dune plateforme de cours en ligne autour de lagriculture.',
         logo: 'github',
         href: 'https://github.com/Celine-Langlade/Agrivideo'
     }];

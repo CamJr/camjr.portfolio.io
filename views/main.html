@@ -1,84 +1,82 @@
-<div id="fullpage" ng-controller"mainController as vm">
-    <div class="section">
-        <h1 class="center-align">CAMJR WEBSITE</h1>
-        <h2 class="center-align">
-            Couteau Suisse du web
-        </h2>
-        <div class="center-align" >
-            <a ng-repeat="social in vm.logo" href="{{social.href}}" class="fa fa-{{social.logo}} fa-3x socialogog" target="_blank" aria-hidden="true"></a>
-        </div>
+  <div id="fullpage" ng-controller"mainController as vm">
+      <div class="section">
+          <h1 class="center-align">CAMJR WEBSITE</h1>
+          <h2 class="center-align">
+              Couteau Suisse du web
+          </h2>
+          <div class="center-align" >
+              <a ng-repeat="social in vm.logo" href="{{social.href}}" class="fa fa-{{social.logo}} fa-3x socialogog" target="_blank" aria-hidden="true"></a>
+          </div>
 
-        <div class="center-align">
-            <p>
-                Utilise ton clavier
-            </p>
-            <div class="row">
-                <i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i>
-            </div>
-            <i class="fa fa-arrow-down fa-2x" aria-hidden="true"></i>
+          <div class="center-align">
+              <p>
+                  Utilise ton clavier
+              </p>
+              <div class="row">
+                  <i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i>
+              </div>
+              <i class="fa fa-arrow-down fa-2x" aria-hidden="true"></i>
 
-        </div>
+          </div>
 
-    </div>
-
-    <div class="section">
-      <div class="center-align">
-
-        <img class="photodeprofil" src="assets/img/photodeprofil.png" alt="photo de profil"/>
       </div>
-        <p class="center-align">
-            Je suis passionné par le web.
-            <br>
-            Mon objectif professionnel est de devenir développeur Web.
-            <br>
-          Actuellement étudiant à la Wild Code School jusqu'au 3 février 2017.
-          <br>
-            Je suis ouvert à toute opportunité de stage.
-         </p>
+
+      <div class="section">
         <div class="center-align">
-            <i class="fa fa-android fa-4x" aria-hidden="true"></i>
+
+          <img class="photodeprofil" src="assets/img/photodeprofil.png" alt="photo de profil"/>
         </div>
+          <p class="center-align">
+              Je suis passionné par le web.
+              <br>
+              Mon objectif professionnel est de devenir développeur Web.
+              <br>
+            Actuellement étudiant à la Wild Code School jusqu'au 3 février 2017.
+            <br>
+              Je suis ouvert à toute opportunité de stage.
+           </p>
+          <div class="center-align">
+              <i class="fa fa-android fa-4x" aria-hidden="true"></i>
+          </div>
 
-    </div>
+      </div>
 
-    <div class="section">
+      <div class="section">
+        <h2 class="center-align skills">COMPETENCE</h2>
+          <div ng-repeat="bar in vm.tableSkill" class="progress col s8 offset-s2">
+              <div class="determinate" style="width: {{bar.number}}%">
+                  <p class="progress_titles">{{bar.skill}}</p>
+                  <p class="progress_pourcent right">{{bar.number}}%</p>
+              </div>
+          </div>
+      </div>
 
-        <div ng-repeat="bar in vm.tableSkill" class="progress col s8 offset-s2">
-            <div class="determinate" style="width: {{bar.number}}%">
-                <p class="progress_titles">{{bar.skill}}</p>
-                <p class="progress_pourcent right">{{bar.number}}%</p>
-            </div>
-        </div>
-    </div>
+      <div class="section">
+          <div class="slide" ng-repeat="project in vm.slide">
+              <h2 class="center-align">{{project.name}}</h2>
+              <div class="center-align">
+                  <img class="main_image_project" ng-src="{{'assets/img/'+project.img}}">
+              </div>
+              <p class="center-align">{{project.bio}}</p>
+              <div class="center-align github_project">
+                  <a class="fa fa-{{project.logo}} fa-3x" href="{{project.href}}"></a>
+              </div>
+          </div>
 
-    <div class="section">
+      </div>
 
-        <div class="slide" ng-repeat="project in vm.slide">
-            <h2 class="center-align">{{project.name}}</h2>
-            <div class="center-align">
-                <img class="main_image_project" ng-src="{{'assets/img/'+project.img}}">
-            </div>
-            <p class="center-align">{{project.bio}}
-            </p>
-            <div class="center-align">
-                <a class="fa fa-{{project.logo}} fa-3x" href="{{project.href}}"></a>
-            </div>
-        </div>
+      <div class="section">
 
-    </div>
+          <div class="slide" ng-repeat="book in vm.photoDiapo">
+              <div class="photo">
+                  <img class="responsive-img" ng-src="{{'assets/img/diapo/'+book.photo}}" alt="{{book.name}}"/>
+              </div>
+          </div>
+      </div>
 
-    <div class="section">
+      <script type="text/javascript">
 
-        <div class="slide" ng-repeat="book in vm.photoDiapo">
-            <div class="photo">
-                <img class="responsive-img" ng-src="{{'assets/img/diapo/'+book.photo}}" alt="{{book.name}}"/>
-            </div>
-        </div>
-    </div>
-
-    <script type="text/javascript">
-
-        $(document).ready(function() {
-            $('#fullpage').fullpage({navigation: true});
-        });
-    </script>
+          $(document).ready(function() {
+              $('#fullpage').fullpage({navigation: true});
+          });
+      </script>
