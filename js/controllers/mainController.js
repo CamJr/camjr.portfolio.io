@@ -1,93 +1,155 @@
-function mainController() {
-    this.logo = [{
-        href: 'https://fr.linkedin.com/in/camfontaine',
-        logo: 'linkedin',
-    }, {
-        href: 'https://github.com/CamJr',
-        logo: 'github',
-    }, {
-        href: 'https://www.youtube.com/channel/UCHEvYXLMVdUWmEM_4hrGm4A',
-        logo: 'youtube',
-    }, {
-        href: 'https://www.instagram.com/camjroff/',
-        logo: 'instagram',
-    }];
+  function mainController() {
+      this.icon = [{
+          href: 'https://fr.linkedin.com/in/camfontaine',
+          logo: 'linkedin',
+      }, {
+          href: 'https://github.com/CamJr',
+          logo: 'github',
+      }, {
+          href: 'https://github.com/CamJr',
+          logo: 'Instagram',
+      }];
 
-    this.tableSkill = [{
-        skill: 'HTML/CSS',
-        number: 90
-    }, {
-        skill: 'JavaScript',
-        number: 80
-    }, {
-        skill: 'AngularJS',
-        number: 80
-    }, {
-        skill: 'MongoDB',
-        number: 75
-    }, {
-        skill: 'NodeJS',
-        number: 80
-    }, {
-        skill: 'Express',
-        number: 75
-    }, {
-        skill: 'Jquery',
-        number: 85
-    }, {
-        skill: 'Suite Adobe',
-        number: 95
-    }];
+      this.logoCode = [{
+          logo: 'html',
+      }, {
+          logo: 'css',
+      }, {
+          logo: 'javascript',
+      }, {
+          logo: 'jquery',
+      }, {
+          logo: 'angular',
+      }, {
+          logo: 'nodejs',
+      }, {
+          logo: 'express',
+      }, {
+          logo: 'mongodb',
+      }, {
+          logo: 'electron',
+      }, {
+          logo: 'wordpress',
+      }, {
+          logo: 'materialize',
+      }, {
+          logo: 'bootstrap',
+      }];
 
-    this.slide = [{
-        name: 'Hackathon Uro-tech Pierre Fabre',
-        img:  'urotech.png',
-        bio:  'Création dun application à usage de patients souffrant dhyperactivité vésicale.',
-        logo: 'github',
-        href: 'https://github.com/stephsen/Hackathon_urotech'
-    }, {
-        name: 'Hackathon Movember Application',
-        img:  'moustache.png',
-        bio:  'Création dune application web mobile pour l’événement Movember.',
-        logo: 'github',
-        href: 'https://github.com/CamJr/Hackathon-Movember'
-    }, {
-      name: 'Projet Centre Hospitalier de La loupe',
-      img:  'chlaloupe.png',
-      bio:  'Création dun site vitrine administrable pour le centre Hospitalier de La Loupe.',
-      logo: 'github',
-      href: 'https://github.com/WildCodeSchool/laloupe-0916-ch-laloupe'
-    }, {
-        name: 'Hackathon ComparateurAgricole.com',
-        img: 'biagri.png',
-        bio: 'Réalisation dun site web dachat et de vente de produits agricoles.',
-        logo: 'github',
-        href: 'https://github.com/Jipsian/Hackathon-Biagri'
-    }, {
-        name: 'Hackathon Agrividéo',
-        img:  'agrivideo.png',
-        bio:  'Création dune plateforme de cours en ligne autour de lagriculture.',
-        logo: 'github',
-        href: 'https://github.com/Celine-Langlade/Agrivideo'
-    }];
 
-    this.photoDiapo = [{
-        photo: 'chateau.jpg',
-        name: 'chateau'
-    }, {
-        photo: 'cristal.jpg',
-        name: 'cristaux de neige'
-    }, {
-        photo: 'star.jpg',
-        name: 'photo étoiles'
-    }, {
-        photo: 'rue.jpg',
-        name: 'photo rue'
-    }, {
-        photo: 'leverdesoleil.jpg',
-        name: 'photo lever de soleil'
-    }, {
-        photo: 'coucherdesoleil.jpg',
-        name: 'photo coucher de soleil'
-    }];
-}
+      this.logoDesign = [{
+          logo: 'photoshop',
+      }, {
+          logo: 'illustrator',
+      }, {
+          logo: 'premiere',
+      }, {
+          logo: 'adobeXd',
+      }, {
+          logo: 'gimp',
+      }, {
+          logo: 'inkScape',
+      }];
+
+      this.logoProject = [{
+          logo: 'github',
+      }, {
+          logo: 'gitlab',
+      }, {
+          logo: 'docker',
+      }, {
+          logo: 'mailchimp',
+      }, {
+          logo: 'googleAnalitics',
+      }, {
+          logo: 'libreoffice',
+      }];
+
+      this.project = [{
+          photo: 'cett.png',
+          title: 'Supervision',
+          text: ' Création d\'une supervision pour composite & Technologie.',
+          hrefLogo: 'http://hopital-nogent.wildcodeschool.fr/#/',
+          link: 'http://hopital-nogent.wildcodeschool.fr/#/',
+          hreflink: 'http://hopital-nogent.wildcodeschool.fr/#/',
+          linkLogo: 'globe'
+      }, {
+          photo: 'chlaloupe.png',
+          title: 'Centre Hospitaliers',
+          text: ' Création d\'un site web pour l\'hôpital de La Loupe.',
+          hrefLogo: 'https://github.com/WildCodeSchool/laloupe-0916-ch-laloupe',
+          link: 'http://hopital-nogent.wildcodeschool.fr/#/',
+          hreflink: 'http://hopital-nogent.wildcodeschool.fr/#/',
+          logo: 'github',
+          linkLogo: 'globe'
+      }, {
+          photo: 'vdf.png',
+          title: 'Vrai du Faux',
+          text: ' Création d’une application web pour le Bureau d’Information de Jeunesse',
+          hrefLogo: 'https://github.com/WildCodeSchool/laloupe-0916-bij',
+          link: 'http://vps366016.ovh.net/#/login',
+          hreflink: 'http://vps366016.ovh.net/#/login',
+          logo: 'github',
+          linkLogo: 'globe'
+      }];
+
+      this.Hackathon = [{
+          photo: 'agreenstartup.png',
+          title: 'Agrivideo',
+          trophy: 'trophy',
+          text: '1er Hackathon Agreen StartUp 2016 - 48H',
+          hrefLogo: 'https://github.com/Celine-Langlade/Agrivideo',
+          logo: 'github'
+      }, {
+          photo: 'movember.png',
+          title: 'Movember',
+          trophy: 'trophy',
+          text: '1er Hackathon Wild Codes School - 31H',
+          hrefLogo: 'https://github.com/Jipsian/Hackathon-Movember',
+          logo: 'github'
+      }, {
+          photo: 'urotech.png',
+          title: 'Uro-Tech',
+          trophy: 'trophy',
+          text: '1er Hackathon Uro-Tech Challenge - 24H',
+          hrefLogo: 'http://urotechchallenge.bemyapp.com/',
+          logo: 'github'
+      }, {
+          photo: 'airliquide.png',
+          title: 'Air liquide',
+          trophy: 'trophy',
+          text: '1er - Hackathon Airliquid - 24H',
+          hrefLogo: 'https://github.com/Jipsian/hackathon-b-come',
+          logo: 'github'
+      }];
+
+      this.fun = [{
+          photo: 'perrette.jpg',
+          title: 'Perrette',
+          text: 'Site web responsive',
+          hrefLogo: 'https://github.com/Jipsian/Projet-Perrette-et-ses-vaches',
+          logo: 'github',
+          hreflink: 'https://camjr.github.io/perrette-et-ses-vaches/',
+          linkLogo: 'globe'
+      }, {
+          photo: 'lotus.png',
+          title: 'Lotus X mjml',
+          text: ' Light is right',
+          hrefLogo: 'https://github.com/CamJr/lotusXmjml/',
+          hreflink: 'https://camjr.github.io/lotusXmjml/',
+          logo: 'github',
+          linkLogo: 'globe'
+      }, {
+          photo: 'nopsis.png',
+          title: 'Nopsis',
+          text: ' Prochainement',
+          // hrefLogo: 'https://fr.linkedin.com/in/',
+          logo: 'github'
+      }, {
+          photo: 'repereage.png',
+          title: 'Repère-Age',
+          text: ' Album Photo',
+          hreflogo: 'https://flic.kr/s/aHskBXxZtA',
+          logo: 'globe'
+      }];
+  }

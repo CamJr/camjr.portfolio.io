@@ -1,82 +1,167 @@
-  <div id="fullpage" ng-controller"mainController as vm">
-      <div class="section">
-          <h1 class="center-align">CAMJR WEBSITE</h1>
-          <h2 class="center-align">
-              Couteau Suisse du web
-          </h2>
-          <div class="center-align" >
-              <a ng-repeat="social in vm.logo" href="{{social.href}}" class="fa fa-{{social.logo}} fa-3x socialogog" target="_blank" aria-hidden="true"></a>
-          </div>
+<div class="section">
+    <div class="center">
+        <img class="profilpic" src="assets/img/photodeprofil.png" alt="photo de profil" />
+        <h1>
+            Camille Antoine Fontaine -
+            <span id="role">Developpeur Web</span>
+        </h1>
+        <ul id="nav-mobile" class="center hide-on-med-and-down">
+            <li>
+                <a ng-repeat="social in vm.icon" href="{{social.href}}" class="fa fa-{{social.logo}} fa-3x socialogo" target="_blank" aria-hidden="true"></a>
+            </li>
+        </ul>
+          <a href="assets/img/CV.pdf" target="_blank" class="waves-effect waves-light btn">CV</a>
 
-          <div class="center-align">
-              <p>
-                  Utilise ton clavier
-              </p>
-              <div class="row">
-                  <i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i>
-              </div>
-              <i class="fa fa-arrow-down fa-2x" aria-hidden="true"></i>
+    </div>
+</div>
 
-          </div>
+<div class="section">
 
-      </div>
-
-      <div class="section">
-        <div class="center-align">
-
-          <img class="photodeprofil" src="assets/img/photodeprofil.png" alt="photo de profil"/>
+    <div class="slide row code binary">
+        <div class="center">
+            <h1>
+                CODE
+            </h1>
         </div>
-          <p class="center-align">
-              Je suis passionné par le web.
-              <br>
-              Mon objectif professionnel est de devenir développeur Web.
-              <br>
-            Actuellement étudiant à la Wild Code School jusqu'au 3 février 2017.
-            <br>
-              Je suis ouvert à toute opportunité de stage.
-           </p>
-          <div class="center-align">
-              <i class="fa fa-android fa-4x" aria-hidden="true"></i>
-          </div>
+        <div ng-repeat="skill in vm.logoCode" class="col center logo">
+            <img class='responsiveImg' src="assets/img/logo/{{skill.logo}}.png">
+        </div>
+    </div>
 
+    <div class="slide row paint">
+        <div class="center">
+            <h1>
+                DESIGN
+            </h1>
+        </div>
+        <div ng-repeat="skill in vm.logoDesign" class="col center logo">
+            <img class='responsiveImg' src="assets/img/logo/{{skill.logo}}.png">
+        </div>
+    </div>
+
+    <div class="slide row office">
+        <div class="center">
+            <h1>
+                PROJET
+            </h1>
+        </div>
+        <div ng-repeat="skill in vm.logoProject" class="col center logo">
+            <img class='responsiveImg' src="assets/img/logo/{{skill.logo}}.png">
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="section">
+    <div class="slide row project">
+        <div class="center">
+            <h1><a href='/projet'>PROJET</a></h1>
+            <div ng-repeat="card in vm.project" class="col s4">
+                <h2>{{card.title}}</h2><br>
+                <a href='{{card.hrefLogo}}' target="_blank" ><img class='logoType' src="assets/img/project/{{card.photo}}"></a><br>
+                <p>{{card.text}}</p><br>
+                <a href="{{card.hrefLogo}}" class="fa fa-{{card.logo}} fa-3x socialogo" target="_blank" aria-hidden="true"></a>
+                <a href="{{card.hreflink}}" class="fa fa-{{card.linkLogo}} fa-3x socialogo" target="_blank" aria-hidden="true"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide row hackathon">
+        <div class="center">
+            <h1>
+                HACKATHON
+            </h1>
+            <div ng-repeat="card in vm.Hackathon" class="col s3">
+                <h2>{{card.title}}</h2><br>
+                <a href='{{card.hrefLogo}}' target="_blank" ><img class='logoType' src="assets/img/project/{{card.photo}}"></a><br>
+                <p><i class="fa fa-{{card.trophy}} fa-3x yellow-text" aria-hidden="true"></i>{{card.text}}</p><br>
+                <a href="{{card.hrefLogo}}" class="fa fa-{{card.logo}} fa-3x socialogo" target="_blank" aria-hidden="true"></a>
+                <a href="{{card.hreflink}}" class="fa fa-{{card.linkLogo}} fa-3x socialogo" target="_blank" aria-hidden="true"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide row playground">
+        <div class="center">
+            <h1>
+                FUN
+            </h1>
+            <div ng-repeat="card in vm.fun" class="col s3">
+                <h2>{{card.title}}</h2><br>
+                <a href='{{card.hrefLogo}}' target="_blank" ><img class='logoType' src="assets/img/project/{{card.photo}}"></a><br>
+                <p>{{card.text}}</p><br>
+                <a href="{{card.hrefLogo}}" class="fa fa-{{card.logo}} fa-3x socialogo" target="_blank" aria-hidden="true"></a>
+                <a href="{{card.hreflink}}" class="fa fa-{{card.linkLogo}} fa-3x socialogo" target="_blank" aria-hidden="true"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="section" >
+    <div class="container">
+      <div class="center">
+          <h1>
+              Contact
+          </h1>
       </div>
+        <form class="col s12">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="last_name" type="text" class="validate">
+                    <label for="last_name">Nom</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="first_name" type="text" class="validate">
+                    <label for="first_name">Prénom</label>
+                </div>
+            </div>
+                <div class="input-field col s6">
+                    <input id="email" type="email" class="validate">
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-field col s6">
+                            <div class="input-field col s6">
+                                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                <label for="textarea1">Message</label>
+                        </div>
+                    </form>
+                </div>
+            <div class="center">
+                <a class="waves-effect waves-light btn">Envoyer</a>
+            </div>
+        </form>
+    </div>
 
-      <div class="section">
-        <h2 class="center-align skills">COMPETENCE</h2>
-          <div ng-repeat="bar in vm.tableSkill" class="progress col s8 offset-s2">
-              <div class="determinate" style="width: {{bar.number}}%">
-                  <p class="progress_titles">{{bar.skill}}</p>
-                  <p class="progress_pourcent right">{{bar.number}}%</p>
-              </div>
-          </div>
-      </div>
+</div> -->
 
-      <div class="section">
-          <div class="slide" ng-repeat="project in vm.slide">
-              <h2 class="center-align">{{project.name}}</h2>
-              <div class="center-align">
-                  <img class="main_image_project" ng-src="{{'assets/img/'+project.img}}">
-              </div>
-              <p class="center-align">{{project.bio}}</p>
-              <div class="center-align github_project">
-                  <a class="fa fa-{{project.logo}} fa-3x" href="{{project.href}}"></a>
-              </div>
-          </div>
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $('#fullpage').fullpage({
+            navigation: true,
+            slidesNavigation: true,
+        });
+    });
 
-      </div>
+    $(function($) {
+        var roles = [
+            'Web designer',
+            'Chef de projet',
+            'Vidéaste',
+            'Photographe',
+            'Couteau Suisse',
+            'Developpeur Web'
+        ];
+        //used to determine which is the next roles to be displayed
+        var counter = 0;
+        var $role = $('#role')
+        //repeat the passed function at the specified interval - it is in milliseconds
+        setInterval(function() {
+            //display the role and increment the counter to point to next role
+            $role.text(roles[counter++]);
+            //if it is the last role in the array point back to the first item
 
-      <div class="section">
-
-          <div class="slide" ng-repeat="book in vm.photoDiapo">
-              <div class="photo">
-                  <img class="responsive-img" ng-src="{{'assets/img/diapo/'+book.photo}}" alt="{{book.name}}"/>
-              </div>
-          </div>
-      </div>
-
-      <script type="text/javascript">
-
-          $(document).ready(function() {
-              $('#fullpage').fullpage({navigation: true});
-          });
-      </script>
+        }, 900)
+    });
+</script>
