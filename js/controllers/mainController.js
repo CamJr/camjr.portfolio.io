@@ -36,7 +36,6 @@
           logo: 'bootstrap',
       }];
 
-
       this.logoDesign = [{
           logo: 'photoshop',
       }, {
@@ -69,16 +68,16 @@
           photo: 'cett.png',
           title: 'Supervision',
           text: ' Création d\'une supervision pour composite & Technologie.',
-          hrefLogo: 'http://hopital-nogent.wildcodeschool.fr/#/',
-          link: 'http://hopital-nogent.wildcodeschool.fr/#/',
-          hreflink: 'http://hopital-nogent.wildcodeschool.fr/#/',
+          hrefImg: 'http://www.composites-technologies.com/',
+          hrefLogo: 'http://www.composites-technologies.com/',
+          hreflink: 'http://www.composites-technologies.com/',
           linkLogo: 'globe'
       }, {
           photo: 'chlaloupe.png',
           title: 'Centre Hospitaliers',
-          text: ' Création d\'un site web pour l\'hôpital de La Loupe.',
+          text: 'Création d\'un site web pour l\'hôpital de La Loupe.',
+          hrefImg: 'http://hopital-nogent.wildcodeschool.fr/#/',
           hrefLogo: 'https://github.com/WildCodeSchool/laloupe-0916-ch-laloupe',
-          link: 'http://hopital-nogent.wildcodeschool.fr/#/',
           hreflink: 'http://hopital-nogent.wildcodeschool.fr/#/',
           logo: 'github',
           linkLogo: 'globe'
@@ -86,8 +85,8 @@
           photo: 'vdf.png',
           title: 'Vrai du Faux',
           text: ' Création d’une application web pour le Bureau d’Information de Jeunesse',
+          hrefImg: 'http://vps366016.ovh.net/#/login',
           hrefLogo: 'https://github.com/WildCodeSchool/laloupe-0916-bij',
-          link: 'http://vps366016.ovh.net/#/login',
           hreflink: 'http://vps366016.ovh.net/#/login',
           logo: 'github',
           linkLogo: 'globe'
@@ -97,44 +96,49 @@
           photo: 'agreenstartup.png',
           title: 'Agrivideo',
           trophy: 'trophy',
-          text: '1er Hackathon Agreen StartUp 2016 - 48H',
+          text: '2eme - Hackathon Agreen StartUp 2016 - 48H',
+          hrefImg: 'https://github.com/Celine-Langlade/Agrivideo',
           hrefLogo: 'https://github.com/Celine-Langlade/Agrivideo',
           logo: 'github'
       }, {
           photo: 'movember.png',
           title: 'Movember',
           trophy: 'trophy',
-          text: '1er Hackathon Wild Codes School - 31H',
+          text: '1er - Hackathon Wild Codes School - 31H',
+          hrefImg: 'https://github.com/Jipsian/Hackathon-Movember',
           hrefLogo: 'https://github.com/Jipsian/Hackathon-Movember',
           logo: 'github'
       }, {
           photo: 'urotech.png',
           title: 'Uro-Tech',
           trophy: 'trophy',
-          text: '1er Hackathon Uro-Tech Challenge - 24H',
-          hrefLogo: 'http://urotechchallenge.bemyapp.com/',
+          text: 'Prix du jury - Hackathon Uro-Tech Challenge - 24H',
+          hrefImg: 'https://github.com/stephsen/Hackathon_urotech',
+          hrefLogo: 'https://github.com/stephsen/Hackathon_urotech',
           logo: 'github'
       }, {
           photo: 'airliquide.png',
           title: 'Air liquide',
           trophy: 'trophy',
           text: '1er - Hackathon Airliquid - 24H',
+          hrefImg: 'https://github.com/Jipsian/hackathon-b-come',
           hrefLogo: 'https://github.com/Jipsian/hackathon-b-come',
           logo: 'github'
       }];
-
       this.fun = [{
           photo: 'perrette.jpg',
           title: 'Perrette',
           text: 'Site web responsive',
+          hrefImg: 'https://camjr.github.io/perrette-et-ses-vaches/',
           hrefLogo: 'https://github.com/Jipsian/Projet-Perrette-et-ses-vaches',
-          logo: 'github',
           hreflink: 'https://camjr.github.io/perrette-et-ses-vaches/',
+          logo: 'github',
           linkLogo: 'globe'
       }, {
           photo: 'lotus.png',
           title: 'Lotus X mjml',
           text: ' Light is right',
+          hrefImg: 'https://github.com/CamJr/lotusXmjml/',
           hrefLogo: 'https://github.com/CamJr/lotusXmjml/',
           hreflink: 'https://camjr.github.io/lotusXmjml/',
           logo: 'github',
@@ -143,12 +147,14 @@
           photo: 'nopsis.png',
           title: 'Nopsis',
           text: ' Prochainement',
+          // hrefImg: 'http://hopital-nogent.wildcodeschool.fr/#/',
           // hrefLogo: 'https://fr.linkedin.com/in/',
           logo: 'github'
       }, {
           photo: 'repereage.png',
           title: 'Repère-Age',
           text: ' Album Photo',
+          hrefImg: 'https://flic.kr/s/aHskBXxZtA',
           hreflogo: 'https://flic.kr/s/aHskBXxZtA',
           logo: 'globe'
       }];

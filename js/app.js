@@ -1,3 +1,2 @@
-angular.module('app', ['ngRoute'])
+angular.module('app', [])
     .controller('mainController', mainController)
-    .config(routes);
