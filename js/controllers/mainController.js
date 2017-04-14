@@ -46,8 +46,8 @@
       logo: 'adobeXd',
     }, {
       logo: 'gimp',
-    }, {
-      logo: 'inkScape',
+    // }, {
+    //   logo: 'inkScape',
     }];
 
     this.logoProject = [{

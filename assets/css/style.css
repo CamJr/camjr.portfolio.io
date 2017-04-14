@@ -69,3 +69,7 @@ h1 {
     .code {
         margin-top: -5%;
     }
+
+    .fp-slidesNav.bottom{
+      visibility: hidden;;
+    }
