@@ -16,7 +16,6 @@
 </div>
 
 <div class="section">
-
     <div class="slide row code binary">
         <div class="center">
             <h1>
@@ -96,6 +95,26 @@
     </div>
 </div>
 
+
+
+<div class="section">
+
+    <div class="center row">
+        <h1>
+        Contact
+    </h1>
+        <div class="col s12 m4" ng-repeat="social in vm.contact">
+            <a href="{{social.href}}" class="fa fa-{{social.logo}} fa-5x" target="_blank" aria-hidden="true"></a><br>
+            <h3>{{social.text}}</h3>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
 <!-- <div class="section" >
     <div class="container">
       <div class="center">
@@ -138,8 +157,14 @@
         $('#fullpage').fullpage({
             navigation: true,
             slidesNavigation: true,
+            anchors: ['Home', 'Skills', 'Projet', 'Contact'],
         });
     });
+
+    setTimeout(function () {
+      $('.paint').css({ "background-image": "url('../assets/img/paint.gif')", "background-repeat": "no-repeat" })
+    }, 1000);
+
 
     $(function($) {
         var roles = [
@@ -148,7 +173,6 @@
             'Chef de projet',
             'Vidéaste',
             'Photographe',
-            'Artisant du beau',
             'Couteau Suisse',
             'Developpeur Web'
         ];

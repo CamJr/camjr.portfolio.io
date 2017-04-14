@@ -1,33 +1,34 @@
-  .binary {
-  background-image: url("../img/binary.png");
-  background-repeat:no-repeat;
-}
-.paint {
-  background-image: url("../img/paint.jpg");
-  background-repeat:no-repeat;
-}
-.office {
-  background-image: url("../img/office.png");
-  background-repeat:no-repeat;
-}
-.hackathon {
-  background-image: url("../img/hackathon.png");
-background-repeat: no-repeat;
-}
-.project {
-  background-image: url("../img/project.png");
-  background-repeat: no-repeat;
-}
-.playground {
-  background-image: url("../img/playground.png");
-  background-repeat: no-repeat;
-}
-h1{
-  font-size: 3.2em
+.binary {
+    background-image: url("../img/binary.png");
+    background-repeat: no-repeat;
 }
 
-.page-footer{
-  margin-bottom: -20%!important
+.office {
+    background-image: url("../img/office.png");
+    background-repeat: no-repeat;
+}
+
+.hackathon {
+    background-image: url("../img/hackathon.png");
+    background-repeat: no-repeat;
+}
+
+.project {
+    background-image: url("../img/project.png");
+    background-repeat: no-repeat;
+}
+
+.playground {
+    background-image: url("../img/playground.png");
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 3.2em
+}
+
+.page-footer {
+    margin-bottom: -20%!important
 }
 
 .socialogo {
@@ -42,29 +43,29 @@ h1{
     width: 20%!important;
 }
 
-.logoType { transition: all .2s ease-in-out; }
-.logoType:hover { transform: scale(1.1); }
-
-.socialogo { transition: all .4s ease-in-out; }
-.socialogo:hover { transform: rotate(360deg); }
-
-
-.test {
-  width: 40%!important;
+.logoType {
+    transition: all .2s ease-in-out;
 }
 
+.logoType:hover {
+    transform: scale(1.1);
+}
+
+.socialogo {
+    transition: all .4s ease-in-out;
+}
+
+.socialogo:hover {
+    transform: rotate(360deg);
+}
 
 @media (max-width: 400px) {
-  .logo {
-      width: 50%!important;
-  }
-
-  .responsiveImg{
+    .logo {
+        width: 50%!important;
+    }
+    .responsiveImg {
         width: 30%!important;
     }
-.code{
-  margin-top: -5%;
-}
-.test {
-display: none
-}
+    .code {
+        margin-top: -5%;
+    }
