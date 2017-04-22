@@ -46,8 +46,8 @@
           logo: 'adobeXd',
       }, {
           logo: 'gimp',
-          // }, {
-          //   logo: 'inkScape',
+      }, {
+          logo: 'moqups',
       }];
 
       this.logoProject = [{
@@ -66,6 +66,8 @@
           logo: 'office',
       }, {
           logo: 'doc',
+      }, {
+          logo: 'trello',
       }];
 
       this.project = [{
@@ -169,10 +171,10 @@
           hrefGlobe: 'https://camjr.github.io/lotusXmjml/',
           git: 'github',
           globe: 'globe',
-      // }, {
-      //     photo: 'nopsis.png',
-      //     title: 'Nopsis',
-      //     text: ' Prochainement',
+          // }, {
+          //     photo: 'nopsis.png',
+          //     title: 'Nopsis',
+          //     text: ' Prochainement',
           // hrefImg: 'http://hopital-nogent.wildcodeschool.fr/#/',
           // hrefGit: 'https://fr.linkedin.com/in/',
           // git: 'github'
