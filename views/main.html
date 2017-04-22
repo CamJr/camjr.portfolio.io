@@ -1,6 +1,6 @@
 <div class="section">
     <div class="center">
-        <img class="profilpic" src="assets/img/photodeprofil.png" alt="photo de profil" />
+        <img class="profilpic circle" src="assets/img/photodeprofil.png" alt="photo de profil" />
         <h1>
             Camille Antoine Fontaine -
             <span id="role">Developpeur Web</span>
@@ -54,7 +54,7 @@
     <div class="desktop slide row project">
         <div class="center">
           <h1>PROJET</h1>
-            <div ng-repeat="card in vm.project" class="mobile center col s12 m4">
+            <div ng-repeat="card in vm.project" class="mobile center col s12 m3">
                 <h2>{{card.title}}</h2><br>
                 <a href='{{card.hrefImg}}' target="_blank"><img class='logoType' ng-src="assets/img/project/{{card.photo}}"></a><br>
                 <p>{{card.text}}</p><br>
@@ -104,7 +104,7 @@
         Contact
     </h1>
         <div class="col s12 m4" ng-repeat="social in vm.contact">
-            <a href="{{social.href}}" class="fa fa-{{social.logo}} fa-5x" target="_blank" aria-hidden="true"></a><br>
+            <a href="{{social.href}}" class="fa fa-{{social.logo}} socialogo fa-5x" target="_blank" aria-hidden="true"></a><br>
             <h3>{{social.text}}</h3>
         </div>
 
@@ -157,15 +157,12 @@
         $('#fullpage').fullpage({
             navigation: true,
             slidesNavigation: true,
-            // anchors: ['Home', 'Skills', 'Projet', 'Contact'],
         });
     });
 
-    setTimeout(function () {
-      $('.paint').css({ "background-image": "url('../assets/img/paint.gif')", "background-repeat": "no-repeat" })
-    }, 1000);
-
-// $("div:mobile").addClass("slide center");
+    // setTimeout(function () {
+    //   $('.paint').css({ "background-image": "url('../assets/img/paint.gif')", "background-repeat": "no-repeat" })
+    // }, 1000);
 
 
 (function($) {

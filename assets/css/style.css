@@ -8,6 +8,11 @@
     background-repeat: no-repeat;
 }
 
+.paint {
+    background-image: url("../img/paint.jpg");
+    background-repeat: no-repeat;
+}
+
 .hackathon {
     background-image: url("../img/hackathon.png");
     background-repeat: no-repeat;
@@ -83,5 +88,10 @@ h2 {
     }
 
     .fp-slidesNav.bottom{
-      visibility: hidden;;
+      visibility: hidden;
+    }
+
+    .binary, .office, .hackathon, .project, .playground {
+      visibility: hidden;
+
     }
