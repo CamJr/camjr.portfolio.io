@@ -65,31 +65,39 @@
     }];
 
     this.project = [{
+      photo: 'agriRescue.png',
+      title: 'Agri-Rescue',
+      text: ' Création du site web pour Agri-Rescue.',
+      // hrefImg: 'http://www.Agri-Rescue.com',
+      // hrefGit: 'http://www.composites-technologies.com/',
+      // hrefGlobe: 'http://www.Agri-Rescue.com',
+      globe: 'globe'
+    }, {
       photo: 'cett.png',
       title: 'Supervision',
       text: ' Création d\'une supervision pour composite & Technologie.',
       hrefImg: 'http://www.composites-technologies.com/',
-      hrefLogo: 'http://www.composites-technologies.com/',
-      hreflink: 'http://www.composites-technologies.com/',
-      linkLogo: 'globe'
+      hrefGit: 'http://www.composites-technologies.com/',
+      hrefGlobe: 'http://www.composites-technologies.com/',
+      globe: 'globe'
     }, {
       photo: 'vdf.png',
       title: 'Vrai du Faux',
       text: ' Création d’une application web pour le Bureau d’Information de Jeunesse',
       hrefImg: 'http://vps366016.ovh.net/#/login',
-      hrefLogo: 'https://github.com/WildCodeSchool/laloupe-0916-bij',
-      hreflink: 'http://vps366016.ovh.net/#/login',
-      logo: 'github',
-      linkLogo: 'globe'
+      hrefGit: 'https://github.com/WildCodeSchool/laloupe-0916-bij',
+      git: 'github',
+      hrefGlobe: 'http://vps366016.ovh.net/#/login',
+      globe: 'globe'
     }, {
       photo: 'chlaloupe.png',
       title: 'Centre Hospitalier',
       text: 'Création d\'un site web pour l\'hôpital de La Loupe.',
       hrefImg: 'http://hopital-nogent.wildcodeschool.fr/#/',
-      hrefLogo: 'https://github.com/WildCodeSchool/laloupe-0916-ch-laloupe',
-      hreflink: 'http://hopital-nogent.wildcodeschool.fr/#/',
-      logo: 'github',
-      linkLogo: 'globe'
+      hrefGit: 'https://github.com/WildCodeSchool/laloupe-0916-ch-laloupe',
+      git: 'github',
+      hrefGlobe: 'http://hopital-nogent.wildcodeschool.fr/#/',
+      globe: 'globe'
     }];
 
     this.Hackathon = [{
@@ -98,65 +106,72 @@
       trophy: 'trophy',
       text: '2eme - Hackathon Agreen StartUp 2016 - 48H',
       hrefImg: 'https://github.com/Celine-Langlade/Agrivideo',
-      hrefLogo: 'https://github.com/Celine-Langlade/Agrivideo',
-      logo: 'github'
+      git: 'github',
+      hrefGit: 'https://github.com/Celine-Langlade/Agrivideo',
     }, {
       photo: 'wcs.png',
       title: 'Movember',
       trophy: 'trophy',
       text: '1er - Hackathon Wild Codes School - 31H',
       hrefImg: 'https://github.com/Jipsian/Hackathon-Movember',
-      hrefLogo: 'https://github.com/Jipsian/Hackathon-Movember',
-      logo: 'github'
+      git: 'github',
+      hrefGit: 'https://github.com/Jipsian/Hackathon-Movember',
     }, {
       photo: 'urotech.png',
       title: 'Uro-Tech',
       trophy: 'trophy',
       text: 'Prix du jury - Hackathon Uro-Tech Challenge - 24H',
       hrefImg: 'https://github.com/stephsen/Hackathon_urotech',
-      hrefLogo: 'https://github.com/stephsen/Hackathon_urotech',
-      logo: 'github'
+      git: 'github',
+      hrefGit: 'https://github.com/stephsen/Hackathon_urotech',
     }, {
       photo: 'airliquide.png',
       title: 'Air liquide',
       trophy: 'trophy',
       text: '1er - Hackathon Airliquid - 24H',
       hrefImg: 'https://github.com/Jipsian/hackathon-b-come',
-      hrefLogo: 'https://github.com/Jipsian/hackathon-b-come',
-      logo: 'github'
+      git: 'github',
+      hrefGit: 'https://github.com/Jipsian/hackathon-b-come',
     }];
     this.fun = [{
       photo: 'repereage.png',
       title: 'Repère-Age',
       text: ' Album Photo',
       hrefImg: 'https://flic.kr/s/aHskBXxZtA',
-      hreflogo: 'https://flic.kr/s/aHskBXxZtA',
-      logo: 'globe'
+      hrefGlobe: 'https://flic.kr/s/aHskBXxZtA',
+      globe: 'globe',
+    }, {
+      photo: 'blog.png',
+      title: 'CamJr Blog',
+      text: ' Blog',
+      hrefImg: 'https://camjrweb.wordpress.com/',
+      hrefGlobe: 'https://camjrweb.wordpress.com/',
+      globe: 'globe',
     }, {
       photo: 'perrette.jpg',
       title: 'Perrette',
       text: 'Site web responsive',
       hrefImg: 'https://camjr.github.io/perrette-et-ses-vaches/',
-      hrefLogo: 'https://github.com/Jipsian/Projet-Perrette-et-ses-vaches',
-      hreflink: 'https://camjr.github.io/perrette-et-ses-vaches/',
-      logo: 'github',
-      linkLogo: 'globe'
+      hrefGit: 'https://github.com/Jipsian/Projet-Perrette-et-ses-vaches',
+      hrefGlobe: 'https://camjr.github.io/perrette-et-ses-vaches/',
+      git: 'github',
+      globe: 'globe',
     }, {
       photo: 'lotus.png',
       title: 'Lotus X mjml',
       text: ' Light is right',
       hrefImg: 'https://github.com/CamJr/lotusXmjml/',
-      hrefLogo: 'https://github.com/CamJr/lotusXmjml/',
-      hreflink: 'https://camjr.github.io/lotusXmjml/',
-      logo: 'github',
-      linkLogo: 'globe'
+      hrefGit: 'https://github.com/CamJr/lotusXmjml/',
+      hrefGlobe: 'https://camjr.github.io/lotusXmjml/',
+      git: 'github',
+      globe: 'globe',
     }, {
       photo: 'nopsis.png',
       title: 'Nopsis',
       text: ' Prochainement',
       // hrefImg: 'http://hopital-nogent.wildcodeschool.fr/#/',
-      // hrefLogo: 'https://fr.linkedin.com/in/',
-      // logo: 'github'
+      // hrefGit: 'https://fr.linkedin.com/in/',
+      // git: 'github'
     }];
 
     this.contact = [{

@@ -23,8 +23,20 @@
     background-repeat: no-repeat;
 }
 
+nav {
+box-shadow: none;
+}
+
 h1 {
     font-size: 3.2em
+}
+
+h2 {
+    font-size: 2em
+}
+
+.titleProject{
+  margin-top: -5%;
 }
 
 .page-footer {

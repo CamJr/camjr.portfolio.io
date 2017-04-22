@@ -23,7 +23,7 @@
             </h1>
         </div>
         <div ng-repeat="skill in vm.logoCode" class="col center logo">
-            <img class='responsiveImg' src="assets/img/logo/{{skill.logo}}.png">
+            <img class='responsiveImg' ng-src="assets/img/logo/{{skill.logo}}.png">
         </div>
     </div>
 
@@ -34,7 +34,7 @@
             </h1>
         </div>
         <div ng-repeat="skill in vm.logoDesign" class="col center logo">
-            <img class='responsiveImg' src="assets/img/logo/{{skill.logo}}.png">
+            <img class='responsiveImg' ng-src="assets/img/logo/{{skill.logo}}.png">
         </div>
     </div>
 
@@ -45,7 +45,7 @@
             </h1>
         </div>
         <div ng-repeat="skill in vm.logoProject" class="col center logo">
-            <img class='responsiveImg' src="assets/img/logo/{{skill.logo}}.png">
+            <img class='responsiveImg' ng-src="assets/img/logo/{{skill.logo}}.png">
         </div>
     </div>
 </div>
@@ -56,10 +56,10 @@
           <h1>PROJET</h1>
             <div ng-repeat="card in vm.project" class="mobile center col s12 m4">
                 <h2>{{card.title}}</h2><br>
-                <a href='{{card.hrefImg}}' target="_blank"><img class='logoType' src="assets/img/project/{{card.photo}}"></a><br>
+                <a href='{{card.hrefImg}}' target="_blank"><img class='logoType' ng-src="assets/img/project/{{card.photo}}"></a><br>
                 <p>{{card.text}}</p><br>
-                <a href="{{card.hrefLogo}}" class="fa fa-{{card.logo}} fa-3x socialogo" target="_blank" aria-hidden="true"></a>
-                <a href="{{card.hreflink}}" class="fa fa-{{card.linkLogo}} fa-3x socialogo" target="_blank" aria-hidden="true"></a>
+                <a href="{{card.hrefGit}}" class="fa fa-{{card.git}} fa-3x socialogo" target="_blank" aria-hidden="true"></a>
+                <a href="{{card.hrefGlobe}}" class="fa fa-{{card.globe}} fa-3x socialogo" target="_blank" aria-hidden="true"></a>
             </div>
         </div>
     </div>
@@ -71,10 +71,10 @@
             </h1>
             <div ng-repeat="card in vm.Hackathon" class="mobile center col s12 m3">
                 <h2>{{card.title}}</h2><br>
-                <a href='{{card.hrefImg}}' target="_blank"><img class='logoType' src="assets/img/project/{{card.photo}}"></a><br>
+                <a href='{{card.hrefImg}}' target="_blank"><img class='logoType' ng-src="assets/img/project/{{card.photo}}"></a><br>
                 <p><i class="fa fa-{{card.trophy}} fa-3x yellow-text" aria-hidden="true"></i>{{card.text}}</p><br>
-                <a href="{{card.hrefLogo}}" class="fa fa-{{card.logo}} fa-3x socialogo" target="_blank" aria-hidden="true"></a>
-                <a href="{{card.hreflink}}" class="fa fa-{{card.linkLogo}} fa-3x socialogo" target="_blank" aria-hidden="true"></a>
+                <a href="{{card.hrefGit}}" class="fa fa-{{card.git}} fa-3x socialogo" target="_blank" aria-hidden="true"></a>
+                <a href="{{card.hrefGlobe}}" class="fa fa-{{card.globe}} fa-3x socialogo" target="_blank" aria-hidden="true"></a>
             </div>
         </div>
     </div>
@@ -86,10 +86,10 @@
             </h1>
             <div ng-repeat="card in vm.fun" class="mobile center col s12 m3">
                 <h2>{{card.title}}</h2><br>
-                <a href='{{card.hrefImg}}' target="_blank"><img class='logoType' src="assets/img/project/{{card.photo}}"></a><br>
+                <a href='{{card.hrefImg}}' target="_blank"><img class='logoType' ng-src="assets/img/project/{{card.photo}}"></a><br>
                 <p>{{card.text}}</p><br>
-                <a href="{{card.hrefLogo}}" class="fa fa-{{card.logo}} fa-3x socialogo" target="_blank" aria-hidden="true"></a>
-                <a href="{{card.hreflink}}" class="fa fa-{{card.linkLogo}} fa-3x socialogo" target="_blank" aria-hidden="true"></a>
+                <a href="{{card.hrefGit}}" class="fa fa-{{card.git}} fa-3x socialogo" target="_blank" aria-hidden="true"></a>
+                <a href="{{card.hrefGlobe}}" class="fa fa-{{card.globe}} fa-3x socialogo" target="_blank" aria-hidden="true"></a>
             </div>
         </div>
     </div>
@@ -171,14 +171,13 @@
 (function($) {
     var $window = $(window),
         $html = $('.mobile');
-        $htmle = $('.desktop');
 
     function resize() {
         if ($window.width() < 514) {
             return $html.addClass('slide');
         }
 
-        $html.removeClass('slide,  ');
+        $html.removeClass('slide');
     }
 
     $window
