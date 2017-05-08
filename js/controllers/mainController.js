@@ -74,10 +74,10 @@
           photo: 'agriRescue.png',
           title: 'Agri-Rescue',
           text: ' Création du site web pour Agri-Rescue.',
-          // hrefImg: 'http://www.Agri-Rescue.com',
+          hrefImg: 'http://www.Agri-Rescue.com',
           // hrefGit: 'http://www.composites-technologies.com/',
-          // hrefGlobe: 'http://www.Agri-Rescue.com',
-          // globe: 'globe'
+          hrefGlobe: 'http://www.Agri-Rescue.com',
+          globe: 'globe'
       }, {
           photo: 'cett.png',
           title: 'Supervision',
@@ -107,13 +107,13 @@
       }];
 
       this.Hackathon = [{
-          photo: 'agreenstartup.png',
-          title: 'Agrivideo',
-          trophy: 'trophy',
-          text: '2eme - Hackathon Agreen StartUp 2016 - 48H',
-          hrefImg: 'https://github.com/Celine-Langlade/Agrivideo',
-          git: 'github',
-          hrefGit: 'https://github.com/Celine-Langlade/Agrivideo',
+        photo: 'agreenstartup.png',
+        title: 'Agrivideo',
+        trophy: 'trophy',
+        text: '2eme - Hackathon Agreen StartUp 2016 - 48H',
+        hrefImg: 'https://github.com/Celine-Langlade/Agrivideo',
+        git: 'github',
+        hrefGit: 'https://github.com/Celine-Langlade/Agrivideo',
       }, {
           photo: 'wcs.png',
           title: 'Movember',
@@ -123,14 +123,6 @@
           git: 'github',
           hrefGit: 'https://github.com/Jipsian/Hackathon-Movember',
       }, {
-          photo: 'urotech.png',
-          title: 'Uro-Tech',
-          trophy: 'trophy',
-          text: 'Prix du jury - Hackathon Uro-Tech Challenge - 24H',
-          hrefImg: 'https://github.com/stephsen/Hackathon_urotech',
-          git: 'github',
-          hrefGit: 'https://github.com/stephsen/Hackathon_urotech',
-      }, {
           photo: 'airliquide.png',
           title: 'Air liquide',
           trophy: 'trophy',
@@ -138,6 +130,14 @@
           hrefImg: 'https://github.com/Jipsian/hackathon-b-come',
           git: 'github',
           hrefGit: 'https://github.com/Jipsian/hackathon-b-come',
+        }, {
+          photo: 'urotech.png',
+          title: 'Uro-Tech',
+          trophy: 'trophy',
+          text: 'Prix du jury - Hackathon Uro-Tech Challenge - 24H',
+          hrefImg: 'https://github.com/stephsen/Hackathon_urotech',
+          git: 'github',
+          hrefGit: 'https://github.com/stephsen/Hackathon_urotech',
       }];
       this.fun = [{
           photo: 'repereage.png',
@@ -147,16 +147,23 @@
           hrefGlobe: 'https://flic.kr/s/aHskBXxZtA',
           globe: 'globe',
       }, {
-          photo: 'blog.png',
-          title: 'CamJr Blog',
-          text: ' Blog',
-          hrefImg: 'https://camjrweb.wordpress.com/',
-          hrefGlobe: 'https://camjrweb.wordpress.com/',
+          photo: 'nopsis.png',
+          title: 'Nopsis',
+          text: ' Blog communautaire dédié à la Pop culture ',
+          hrefImg: 'http://nopsisblog.wordpress.com',
+          hrefGlobe: 'http://nopsisblog.wordpress.com',
           globe: 'globe',
       }, {
+          //     photo: 'blog.png',
+          //     title: 'CamJr Blog',
+          //     text: ' Blog',
+          //     hrefImg: 'https://camjrweb.wordpress.com/',
+          //     hrefGlobe: 'https://camjrweb.wordpress.com/',
+          //     globe: 'globe',
+          // }, {
           photo: 'perrette.jpg',
           title: 'Perrette',
-          text: 'Site web responsive',
+          text: 'Site web responsive réalisé à la Wild Codes School',
           hrefImg: 'https://camjr.github.io/perrette-et-ses-vaches/',
           hrefGit: 'https://github.com/Jipsian/Projet-Perrette-et-ses-vaches',
           hrefGlobe: 'https://camjr.github.io/perrette-et-ses-vaches/',
@@ -171,13 +178,6 @@
           hrefGlobe: 'https://camjr.github.io/lotusXmjml/',
           git: 'github',
           globe: 'globe',
-          // }, {
-          //     photo: 'nopsis.png',
-          //     title: 'Nopsis',
-          //     text: ' Prochainement',
-          // hrefImg: 'http://hopital-nogent.wildcodeschool.fr/#/',
-          // hrefGit: 'https://fr.linkedin.com/in/',
-          // git: 'github'
       }];
 
       this.contact = [{
